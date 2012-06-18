@@ -1,0 +1,11 @@
+=head1 NAME
+
+Protect-Unwind - Safe cleanup blocks, Common Lisp style
+
+
+=head1 SYNOPSIS
+
+
+
+=cut
+
