@@ -78,7 +78,3 @@ Copyright 2012 Doug Hoyte.
 This module is licensed under the same terms as perl itself.
 
 =cut
-
-
-
-=cut
