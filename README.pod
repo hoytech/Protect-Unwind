@@ -24,7 +24,7 @@ It only exists so that hopefully lisp programmers new to perl will find this mod
 
 Unwind::Protect concentrates too hard on maintaining C<wantarray> and hiding created stack frames which are "problems" I don't care about. The only purpose of lisp's C<unwind-protect> is that the cleanup-form is always run once the protected-form goes out of scope, something that Unwind::Protect doesn't implement correctly.
 
-Also, this module's test-suite can be considered an add-on to the L<Guard> tests.
+Note that if your unwind forms throw exceptions the behaviour is somewhat complicated (see the L<Guard> docs).
 
 
 =head1 SEE ALSO
