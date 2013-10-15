@@ -33,10 +33,11 @@ sub unwind (&) {
 __END__
 
 
+=encoding utf-8
+
 =head1 NAME
 
 Protect-Unwind - Safe cleanup blocks, Common Lisp style
-
 
 =head1 SYNOPSIS
 
