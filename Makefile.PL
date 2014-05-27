@@ -1,9 +1,5 @@
 use ExtUtils::MakeMaker;
 
-my $preop =
-    'perldoc -uT $(VERSION_FROM) | tee $(DISTVNAME)/README.pod > README.pod;' .
-    'pod2text README.pod | tee $(DISTVNAME)/README > README';
-
 WriteMakefile(
   NAME => 'Protect::Unwind',
   VERSION_FROM => 'lib/Protect/Unwind.pm',
@@ -13,6 +9,6 @@ WriteMakefile(
     'Guard' => 0,
   },
   dist => {
-    PREOP => $preop,
+    PREOP => 'pod2text $(VERSION_FROM) > $(DISTVNAME)/README',
   },
 );
